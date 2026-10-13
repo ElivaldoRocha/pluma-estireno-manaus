@@ -1,0 +1,114 @@
+/* Estilos próprios do site — hoje, só o cartão de reportagem em vídeo.
+ *
+ * O cartão é uma "fachada": miniatura oficial + botão de play que leva ao
+ * player da Globo. Não é um embed porque não pode ser (ver o figcaption): o
+ * globoplay responde `X-Frame-Options: SAMEORIGIN`, que proíbe qualquer
+ * iframe fora dos domínios do grupo. O cartão deixa isso explícito em vez de
+ * fingir um player que abriria em branco.
+ */
+
+.reportagem {
+  margin: 1.6rem 0 1.2rem;
+}
+
+.reportagem__card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #111;
+  text-decoration: none;
+  line-height: 0;                 /* mata o vão sob a <img> */
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .18);
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+
+.reportagem__card:hover,
+.reportagem__card:focus-visible {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .28);
+  transform: translateY(-1px);
+}
+
+.reportagem__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: .92;
+  transition: opacity .18s ease;
+}
+
+.reportagem__card:hover .reportagem__thumb {
+  opacity: 1;
+}
+
+.reportagem__play {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .62);
+  border: 2px solid rgba(255, 255, 255, .9);
+  transition: background .18s ease;
+}
+
+/* Triângulo em CSS, não o caractere "▶": o glifo cai no font de emoji do
+   sistema e vira um botão azul de outra marca no meio da miniatura. */
+.reportagem__play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  border-style: solid;
+  border-width: 13px 0 13px 22px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.reportagem__card:hover .reportagem__play {
+  background: rgba(200, 16, 46, .88);   /* vermelho de play, só no hover */
+}
+
+.reportagem__faixa {
+  display: block;
+  padding: .6rem .85rem .7rem;
+  background: #1b1b1b;
+  color: #f2f2f2;
+  line-height: 1.35;
+}
+
+.reportagem__faixa b {
+  display: block;
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.reportagem__faixa span {
+  display: block;
+  margin-top: .18rem;
+  font-size: .78rem;
+  color: #b9b9b9;
+}
+
+.reportagem figcaption {
+  margin-top: .45rem;
+  font-size: .78rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+/* Transcrição: texto de terceiro, marcado como citação para não se confundir
+   com o texto do artigo. */
+.transcricao {
+  border-left: 3px solid #ccc;
+  padding-left: .9rem;
+  font-size: .92rem;
+  color: #333;
+}
+
+.transcricao p {
+  margin: .35rem 0;
+}

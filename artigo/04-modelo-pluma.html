@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Modelando a pluma invisível – Pluma de Estireno em Manaus</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-fd9630481be73be29ab2482d2a3a6225.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../assets/estilo.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Pluma de Estireno em Manaus</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/01-o-evento.html"> 
+<span class="menu-text">O evento</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/00-dados-e-metodos.html"> 
+<span class="menu-text">Dados e métodos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/02-odor-vs-risco.html"> 
+<span class="menu-text">Odor × risco</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/03-meteorologia.html"> 
+<span class="menu-text">Meteorologia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/03b-sondagens.html"> 
+<span class="menu-text">Sondagens</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../artigo/04-modelo-pluma.html" aria-current="page"> 
+<span class="menu-text">Modelo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/04b-destino-estireno.html"> 
+<span class="menu-text">Destino químico</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/05-satelite-trajetorias.html"> 
+<span class="menu-text">Satélite</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/06-impacto-humano.html"> 
+<span class="menu-text">Impacto</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/06b-afericao-externa.html"> 
+<span class="menu-text">Aferição externa</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/07-resposta-regulacao.html"> 
+<span class="menu-text">Regulação</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/08-conclusoes-metodo.html"> 
+<span class="menu-text">Conclusões</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../artigo/fontes.html"> 
+<span class="menu-text">Fontes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#o-modelo-de-pluma-gaussiana" id="toc-o-modelo-de-pluma-gaussiana" class="nav-link active" data-scroll-target="#o-modelo-de-pluma-gaussiana">O modelo de pluma gaussiana</a>
+  <ul class="collapse">
+  <li><a href="#termos-acrescentados-à-formulação-padrão" id="toc-termos-acrescentados-à-formulação-padrão" class="nav-link" data-scroll-target="#termos-acrescentados-à-formulação-padrão">Termos acrescentados à formulação padrão</a></li>
+  </ul></li>
+  <li><a href="#perfil-de-concentração-na-linha-central" id="toc-perfil-de-concentração-na-linha-central" class="nav-link" data-scroll-target="#perfil-de-concentração-na-linha-central">Perfil de concentração na linha central</a></li>
+  <li><a href="#problema-inverso-a-emissão-compatível-com-odor-a-15-km" id="toc-problema-inverso-a-emissão-compatível-com-odor-a-15-km" class="nav-link" data-scroll-target="#problema-inverso-a-emissão-compatível-com-odor-a-15-km">Problema inverso: a emissão compatível com odor a 15 km</a>
+  <ul class="collapse">
+  <li><a href="#por-que-a-estabilidade-deixa-de-dominar" id="toc-por-que-a-estabilidade-deixa-de-dominar" class="nav-link" data-scroll-target="#por-que-a-estabilidade-deixa-de-dominar">Por que a estabilidade deixa de dominar</a></li>
+  <li><a href="#sensibilidade-à-distância-alvo-e-à-altura-efetiva" id="toc-sensibilidade-à-distância-alvo-e-à-altura-efetiva" class="nav-link" data-scroll-target="#sensibilidade-à-distância-alvo-e-à-altura-efetiva">Sensibilidade à distância-alvo e à altura efetiva</a></li>
+  <li><a href="#envelope-de-cenários" id="toc-envelope-de-cenários" class="nav-link" data-scroll-target="#envelope-de-cenários">Envelope de cenários</a></li>
+  </ul></li>
+  <li><a href="#alcance-dos-níveis-de-referência" id="toc-alcance-dos-níveis-de-referência" class="nav-link" data-scroll-target="#alcance-dos-níveis-de-referência">Alcance dos níveis de referência</a></li>
+  <li><a href="#mapas-interativos" id="toc-mapas-interativos" class="nav-link" data-scroll-target="#mapas-interativos">Mapas interativos</a>
+  <ul class="collapse">
+  <li><a href="#contexto-e-anéis-de-distância" id="toc-contexto-e-anéis-de-distância" class="nav-link" data-scroll-target="#contexto-e-anéis-de-distância">Contexto e anéis de distância</a></li>
+  <li><a href="#rumo-do-transporte" id="toc-rumo-do-transporte" class="nav-link" data-scroll-target="#rumo-do-transporte">Rumo do transporte</a></li>
+  <li><a href="#isopletas-de-concentração" id="toc-isopletas-de-concentração" class="nav-link" data-scroll-target="#isopletas-de-concentração">Isopletas de concentração</a></li>
+  </ul></li>
+  <li><a href="#limitações-do-campo-de-concentração" id="toc-limitações-do-campo-de-concentração" class="nav-link" data-scroll-target="#limitações-do-campo-de-concentração">Limitações do campo de concentração</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Modelando a pluma invisível</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="o-modelo-de-pluma-gaussiana" class="level2">
+<h2 class="anchored" data-anchor-id="o-modelo-de-pluma-gaussiana">O modelo de pluma gaussiana</h2>
+<p>Adotou-se o <strong>modelo de pluma gaussiana</strong>, base dos modelos regulatórios de triagem (EPA SCREEN3/ISC). Uma fonte contínua emite a uma taxa <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>; o vento de velocidade <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> transporta o poluente; a dispersão lateral e vertical é descrita por desvios <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>y</mi></msub><annotation encoding="application/x-tex">\sigma_y</annotation></semantics></math> e <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>z</mi></msub><annotation encoding="application/x-tex">\sigma_z</annotation></semantics></math> que crescem com a distância e dependem da estabilidade atmosférica.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mi>Q</mi><mrow><mn>2</mn><mi>π</mi><mspace width="0.167em"></mspace><mi>u</mi><mspace width="0.167em"></mspace><msub><mi>σ</mi><mi>y</mi></msub><mspace width="0.167em"></mspace><msub><mi>σ</mi><mi>z</mi></msub></mrow></mfrac><mspace width="0.278em"></mspace><mo>exp</mo><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mfrac><msup><mi>y</mi><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>σ</mi><mi>y</mi><mn>2</mn></msubsup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><mo>exp</mo><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>σ</mi><mi>z</mi><mn>2</mn></msubsup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mo>exp</mo><mspace width="-0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>+</mo><mi>H</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><msubsup><mi>σ</mi><mi>z</mi><mn>2</mn></msubsup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">
+C(x,y,z) = \frac{Q}{2\pi\,u\,\sigma_y\,\sigma_z}
+\;\exp\!\left(-\frac{y^2}{2\sigma_y^2}\right)
+\left[\exp\!\left(-\frac{(z-H)^2}{2\sigma_z^2}\right) +
+      \exp\!\left(-\frac{(z+H)^2}{2\sigma_z^2}\right)\right]
+</annotation></semantics></math></p>
+<p>Empregaram-se os coeficientes de <strong>Briggs</strong> em parametrização urbana, com reflexão no solo. A altura efetiva de emissão do caso base é <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>38</mn></mrow><annotation encoding="application/x-tex">H = 38</annotation></semantics></math> m — o topo do tanque somado à ascensão da pluma, cuja derivação está em <a href="../artigo/04b-destino-estireno.html">o destino do estireno</a>. A taxa <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> não foi divulgada: é a grandeza que este capítulo estima.</p>
+<section id="termos-acrescentados-à-formulação-padrão" class="level3">
+<h3 class="anchored" data-anchor-id="termos-acrescentados-à-formulação-padrão">Termos acrescentados à formulação padrão</h3>
+<p>Três termos ausentes da equação acima foram incorporados ao modelo:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Termo</th>
+<th>Função</th>
+<th>Efeito a 15 km</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Tampa de camada de mistura</strong></td>
+<td>a inversão noturna interrompe o crescimento vertical da pluma; a 15 km <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>z</mi></msub><mo>=</mo><mn>248</mn></mrow><annotation encoding="application/x-tex">\sigma_z = 248</annotation></semantics></math> m já excede a camada de mistura de 149 m</td>
+<td>×2,11 para cima</td>
+</tr>
+<tr class="even">
+<td><strong>Decaimento químico</strong></td>
+<td>o estireno reage em trânsito (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math> noturno de 11,9 h, limitado pelo oxidante disponível)</td>
+<td>×0,86 para baixo</td>
+</tr>
+<tr class="odd">
+<td><strong>Razão pico/média</strong></td>
+<td>os coeficientes de Briggs correspondem a médias de ~10 min, enquanto a percepção olfativa integra poucos segundos</td>
+<td>×4,0 para cima</td>
+</tr>
+</tbody>
+</table>
+<p>Os três termos não apontam para o mesmo lado, e é disso que depende a estabilidade do resultado. A tampa de mistura faz o modelo subestimar o campo distante; o decaimento químico faz superestimar. No regime que importa para o problema inverso — madrugada de ar limpo — os dois quase se cancelam (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>11</mn><mo>×</mo><mn>0</mn><mo>,</mo><mn>86</mn><mo>≈</mo><mn>1</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">2{,}11 \times 0{,}86 \approx 1{,}8</annotation></semantics></math>), de modo que a estimativa de <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> não muda de ordem de grandeza quando ambos entram na conta.</p>
+<p>O mesmo ocorre no par formado pelo limiar observável e pela razão pico/média. O relato de “cheiro de tinta” corresponde ao limiar de <strong>reconhecimento</strong> (0,10 ppm), e não ao de <strong>detecção</strong> (0,032 ppm), o que empurra <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> para cima; em compensação, o olfato responde ao pico instantâneo e não à média de 10 min, o que empurra para baixo. Aplicar apenas um dos dois desloca o resultado por uma ordem de grandeza. No membro central os dois entram juntos, com limiar de 0,10 ppm e razão pico/média de 4,0; a varredura de cenários leva essa razão até 5,3, valor dado pela lei de potência <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>600</mn><mi>/</mi><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>0</mn><mo>,</mo><mn>35</mn></mrow></msup><annotation encoding="application/x-tex">(600/t)^{0{,}35}</annotation></semantics></math> para um tempo de integração olfativa de 5 s. O decaimento químico e o alcance limitado da ressalva de gás denso são tratados em <a href="../artigo/04b-destino-estireno.html">o destino do estireno</a>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>A razão pico/média não tem aferição independente.</em> Ela converte a média de 10 minutos que os coeficientes entregam num pico de 5 segundos, isto é, extrapola a lei de potência por um fator 120 em tempo — duas ordens de grandeza abaixo da menor janela para a qual o expoente é tabelado. Como <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> escala linearmente com ela, o resultado central depende inteiramente dessa extrapolação: com razão unitária, o mesmo limiar de reconhecimento devolve 0,26 kg/s no lugar de 0,065. A escolha é declarada, e não verificada.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="perfil-de-concentração-na-linha-central" class="level2">
+<h2 class="anchored" data-anchor-id="perfil-de-concentração-na-linha-central">Perfil de concentração na linha central</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../outputs/figures/pluma_centerline.png" class="img-fluid figure-img"></p>
+<figcaption>Painel superior: concentração ao nível do solo na linha central para <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Q = 1</annotation></semantics></math> kg/s, classe F, nas três alturas efetivas defensáveis (26, 38 e 62 m), com a decomposição dos termos opcionais — tampa de camada de mistura, decaimento químico e razão pico/média. Painel inferior: a atenuação geométrica <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>exp</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><msup><mi>H</mi><mn>2</mn></msup><mi>/</mi><mn>2</mn><msubsup><mi>σ</mi><mi>z</mi><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\exp(-H^2/2\sigma_z^2)</annotation></semantics></math> em função da distância. A faixa sombreada marca o trecho além dos 10 km, em que as curvas de Briggs passam a ser extrapoladas.</figcaption>
+</figure>
+</div>
+<p>A altura da fonte governa o campo próximo e é irrelevante no campo distante. Com <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>38</mn></mrow><annotation encoding="application/x-tex">H = 38</annotation></semantics></math> m e sem a tampa de mistura, a atenuação geométrica vale 0,75 a 1 km e <strong>0,99 a 15 km</strong>: a 15 km <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>z</mi></msub><annotation encoding="application/x-tex">\sigma_z</annotation></semantics></math> já é muito maior que <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>, e o nível do solo não distingue de que altura o material saiu. O máximo de concentração ao nível do solo fica a 269 m da fonte no cenário de respiro contido, a 419 m no central e a 763 m no energético; além de ~5 km as três curvas colapsam sobre a mesma linha.</p>
+</section>
+<section id="problema-inverso-a-emissão-compatível-com-odor-a-15-km" class="level2">
+<h2 class="anchored" data-anchor-id="problema-inverso-a-emissão-compatível-com-odor-a-15-km">Problema inverso: a emissão compatível com odor a 15 km</h2>
+<p>Fixando a concentração no limiar de odor a <strong>15 km</strong> e resolvendo a equação para <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>, obtém-se a emissão mínima necessária para explicar a percepção relatada. No membro central — vento de 1,5 m/s a 10 m, camada de mistura de 149 m, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math> de 11,9 h da noite de ar limpo — o resultado por classe de estabilidade é:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estabilidade</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> (kg/s)</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> (t/h)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D (neutra)</td>
+<td style="text-align: right;">0,094</td>
+<td style="text-align: right;">0,34</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td style="text-align: right;">0,065</td>
+<td style="text-align: right;">0,23</td>
+</tr>
+<tr class="odd">
+<td><strong>F (estável)</strong></td>
+<td style="text-align: right;"><strong>0,065</strong></td>
+<td style="text-align: right;"><strong>0,23</strong></td>
+</tr>
+</tbody>
+</table>
+<p>As classes A, B e C ocorrem apenas de dia e não se combinam com a química noturna que o membro central pressupõe; por isso não figuram na tabela.</p>
+<p>A comparação defensável não é entre classes isoladas, e sim entre regimes completos. Um cenário diurno — classe C, vento de 3,9 m/s, camada de mistura de 1000 m e <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math> diurno — exigiria <strong>2,24 kg/s</strong> (8,1 t/h) para produzir odor a 15 km, contra 0,065 kg/s do cenário de madrugada. O contraste é de um fator <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo><mn>35</mn></mrow><annotation encoding="application/x-tex">\approx 35</annotation></semantics></math>, e sua origem é a combinação de vento, camada de mistura e química, não a classe de estabilidade em si. É o que explica o adensamento das queixas à noite e no início da manhã. Cada regime carrega o expoente do perfil de vento que lhe corresponde — 0,30 sob classe estável, 0,20 sob a classe C convectiva —, de modo que a comparação não transporta para o dia o cisalhamento da noite.</p>
+<section id="por-que-a-estabilidade-deixa-de-dominar" class="level3">
+<h3 class="anchored" data-anchor-id="por-que-a-estabilidade-deixa-de-dominar">Por que a estabilidade deixa de dominar</h3>
+<p>Sob a tampa de mistura, a razão entre as classes D e F cai para <strong>1,45</strong>, que é exatamente <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>y</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">D</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><msub><mi>σ</mi><mi>y</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">F</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>16</mn><mi>/</mi><mn>0</mn><mo>,</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">\sigma_y(\mathrm{D})/\sigma_y(\mathrm{F}) = 0{,}16/0{,}11</annotation></semantics></math>. A razão é geométrica: a 15 km <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>z</mi></msub><annotation encoding="application/x-tex">\sigma_z</annotation></semantics></math> vale 248 m e já supera <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>6</mn><mspace width="0.167em"></mspace><mi>L</mi><mo>=</mo><mn>238</mn></mrow><annotation encoding="application/x-tex">1{,}6\,L = 238</annotation></semantics></math> m, com <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>149</mn></mrow><annotation encoding="application/x-tex">L = 149</annotation></semantics></math> m, valor a partir do qual o termo vertical satura em <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">1/L</annotation></semantics></math> nas duas classes. Saturado o termo vertical, resta apenas a razão entre os coeficientes laterais. Sem a tampa, a mesma razão entre classes valeria 5,2.</p>
+</section>
+<section id="sensibilidade-à-distância-alvo-e-à-altura-efetiva" class="level3">
+<h3 class="anchored" data-anchor-id="sensibilidade-à-distância-alvo-e-à-altura-efetiva">Sensibilidade à distância-alvo e à altura efetiva</h3>
+<p>Pela mesma razão geométrica, a distância adotada como alvo pesa pouco. Tomando 15 km como referência, 12 km dá ×0,85 e 18 km dá ×1,15; ampliando o intervalo para 8 e 20 km, os fatores vão de 0,64 a 1,24. A cifra de 15 km é um relato de percepção de odor, sem geolocalização nem horário associados, e a fraca sensibilidade do resultado a esse valor é o que torna a inversão utilizável apesar disso.</p>
+<p>A altura efetiva também pesa pouco: de 26 a 62 m, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> varia de 0,059 a 0,073 kg/s, uma faixa de 24%. A variação vem inteiramente do perfil vertical de vento — uma fonte mais alta encontra vento mais forte. Com <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> fixo, a variação é nula: sob mistura uniforme, a concentração ao nível do solo a 15 km não depende de <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>Limitação.</em> As curvas de dispersão de Briggs (1973) foram ajustadas para distâncias de 100 m a 10 km. A totalidade do problema inverso opera a 15 km, isto é, fora do intervalo de ajuste: os <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math> empregados ali são extrapolação, não interpolação.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="envelope-de-cenários" class="level3">
+<h3 class="anchored" data-anchor-id="envelope-de-cenários">Envelope de cenários</h3>
+<p>Varrendo oito eixos — ramo químico, classe de estabilidade, vento, altura efetiva, camada de mistura, par observável, distância-alvo e família de curvas de dispersão — em 2916 combinações, o resultado não é um número com barra de erro. Cada combinação passa antes por um teste de conservação de massa de oxidante, descrito adiante, que reprova 1485 delas:</p>
+<table class="caption-top table">
+<caption>Faixas com a parametrização urbana, que é a escolha central. Com as curvas rurais o ramo de ar limpo vai de 0,011 a 0,51 kg/s.</caption>
+<colgroup>
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ramo químico</th>
+<th style="text-align: right;">Combinações admissíveis</th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> (kg/s)</th>
+<th><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> (t/h)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Noite de ar limpo (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≈</mo><mn>11</mn><mo>,</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">\tau \approx 11{,}9</annotation></semantics></math> h)</td>
+<td style="text-align: right;">1431 de 1458</td>
+<td>0,024 a 0,82</td>
+<td>0,09 a 2,94</td>
+</tr>
+<tr class="even">
+<td>Noite sob NOx industrial (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>≈</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">\tau \approx 22</annotation></semantics></math> min)</td>
+<td style="text-align: right;"><strong>0 de 1458</strong></td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>O conjunto é uma varredura de cenários, não uma amostra de distribuição: admite bordas, mas não mediana nem intervalo de confiança.</p>
+<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+O ramo de NO₃ não sobrevive a um balanço de oxidante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O decaimento de primeira ordem trata a concentração de oxidante como constante e externa à pluma. Isso vale para um traçador em diluição infinita, e deixa de valer quando a pluma contém mais estireno do que há oxidante para consumi-lo.</p>
+<p>O reservatório correto é o <strong>oxigênio ímpar</strong>, e não o NO₃ instantâneo: o NO₃ se forma de NO₂ + O₃ e, ao somar-se à dupla ligação do estireno, não se regenera — cada molécula destruída por essa via custa um O₃, exatamente como a via direta. À noite não há fotólise de NO₂ que recicle o reservatório. Para um pacote de pluma, o oxidante cumulativamente entregue até o alvo é <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><msub><mtext mathvariant="normal">O</mtext><mi>x</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow><mspace width="0.167em"></mspace><mi>V</mi></mrow><annotation encoding="application/x-tex">[\text{O}_x]\,V</annotation></semantics></math> — o inicial mais o arrastado, já que o ar arrastado traz o mesmo fundo — e o estireno destruído é <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>m</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">m(0) - m(t)</annotation></semantics></math>. Dividindo por <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>, o balanço fica em razão de mistura e não depende da diluição:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mtext mathvariant="normal">pré</mtext></msub><mspace width="0.167em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>f</mi><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="0.278em"></mspace><mo>≤</mo><mspace width="0.278em"></mspace><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi mathvariant="normal">O</mi><mi>x</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">C_{\text{pré}}\,(1 - f) \;\le\; [\mathrm{O}_x].</annotation></semantics></math></p>
+<p>Contra os 20 ppb de ozônio de superfície medidos na Amazônia central em estação seca, o membro central destrói 0,0042 ppm, ou <strong>0,21 vez</strong> o disponível: passa com folga de fator cinco. O ramo de NO₃ industrial exige de <strong>3,8 a 4,1×10⁵ vezes</strong> o disponível, e é reprovado nos 1458 membros. Dito ao contrário, e sem depender do valor adotado: o membro central pede 4,2 ppb de ozônio, e o ramo de NO₃ pediria 4.000 ppb. Não é um cenário improvável: é um cenário impossível. O próprio estireno titularia o NO₃ muito abaixo dos 5×10⁸ moléculas/cm³ assumidos, de modo que o tempo de vida noturno sob NOx industrial seria <strong>maior</strong> que o de ar limpo, e não vinte vezes menor.</p>
+<p>A consequência é que o conjunto <strong>deixa de ser bimodal</strong>. Some com o ramo a indeterminação de três ordens de grandeza que atravessava o trabalho, e some também a condicionalidade — o resultado não depende mais de supor NO₃ noturno baixo, porque a química rápida é impossível qualquer que fosse o NOx local.</p>
+</div>
+</div>
+<p>Trocando <strong>apenas</strong> o limiar de reconhecimento (0,10 ppm) pelo nível oficial de percepção distinta de odor da agência ambiental norte-americana (0,54 ppm), e mantendo todo o resto do membro central, a emissão inferida sobe por fator 5,4, para <strong>0,350 kg/s</strong> — ainda dentro do envelope, mas acima do membro central. A escolha deste trabalho, portanto, subestima <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> em relação ao valor oficial, e não o exagera.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Os dois eixos de maior alavancagem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O <strong>limiar de odor adotado</strong> é o eixo que mais move <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>, porque a inversão é linear nele. Movendo-o sozinho, do piso de detecção da literatura ao valor oficial da agência, a emissão inferida percorre de 0,065 a 0,350 kg/s — fator 5,4 — e chega a 1,40 kg/s se o valor oficial for comparado ao campo médio, sem a razão pico/média. A dispersão dos limiares olfativos publicados é a maior incerteza isolada do problema inverso.</p>
+<p>O segundo é a <strong>família de curvas de dispersão</strong>. Sob classe F o par urbano/rural corresponde a um fator de <strong>3,1</strong> com o vento de transporte fixo, e de <strong>2,3</strong> quando o expoente do perfil de vento acompanha a classe e o terreno (Irwin, 1979) — a leitura internamente coerente, e a que o envelope usa. A causa é a interação com a tampa noturna: a 15 km o <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>z</mi></msub><annotation encoding="application/x-tex">\sigma_z</annotation></semantics></math> urbano, de 248 m, já excede <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>6</mn><mspace width="0.167em"></mspace><mi>L</mi></mrow><annotation encoding="application/x-tex">1{,}6\,L</annotation></semantics></math> e satura na mistura uniforme; o rural, de 44 m, permanece muito abaixo da tampa e continua a diluir livremente. As duas famílias diferem em regime, não apenas em magnitude.</p>
+<p>A escolha urbana é sustentada pela geografia — fonte no Distrito Industrial, trajeto de 15 km sobre área construída, que é a situação dos experimentos que originaram as curvas. Ela merece ressalva porque a base de uso do solo do campo de alta resolução classifica a célula da fonte como vegetada. O tratamento completo está em <a href="../artigo/00-dados-e-metodos.html">dados e métodos</a>.</p>
+</div>
+</div>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> é da ordem de <strong>0,1 kg/s</strong>, com 0,065 kg/s (0,23 t/h) no membro central. É uma taxa fisicamente modesta para um tanque industrial, compatível com respiros de válvula de alívio e não com uma ruptura: não é preciso supor emissão de grande magnitude para explicar a percepção de odor em escala urbana. A formulação defensável não é “<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>24</mn></mrow><annotation encoding="application/x-tex">Q = 0{,}24</annotation></semantics></math> t/h”, com três algarismos, e sim: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math> é da ordem de 0,1 kg/s, com o envelope inteiro entre 0,025 e 0,82 kg/s sob as curvas urbanas. O que sustenta a estreiteza dessa faixa, comparada à das versões anteriores deste trabalho, não é confiança acrescida: é a eliminação de um ramo que o balanço de oxidante mostrou impossível (<a href="../artigo/04b-destino-estireno.html">o destino do estireno</a>).</p>
+<p>Integrada ao longo das ~60 h de emissão, a taxa central corresponde a uma massa da ordem de 10 t, e o ramo de ar limpo inteiro cobre de poucas a algumas centenas de toneladas. O número só tem valor como ordem de grandeza: supõe emissão constante durante todo o período e regime noturno de ar limpo o tempo inteiro, enquanto cerca de metade das horas foi diurna, com química mais rápida e camada de mistura mais profunda.</p>
+</section>
+</section>
+<section id="alcance-dos-níveis-de-referência" class="level2">
+<h2 class="anchored" data-anchor-id="alcance-dos-níveis-de-referência">Alcance dos níveis de referência</h2>
+<p>Distâncias na linha central, classe F, membro central. Nenhum dos limiares abaixo recebe a razão pico/média: todos são médias na duração que os define — 8 h para o TLV-TWA, 15 min para o STEL, 10 min para os AEGL —, ao passo que a correção se aplica apenas ao odor, grandeza percebida no pico instantâneo.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>Os tempos de média não coincidem, e a diferença tem sinal.</em> O campo do modelo é uma média de aproximadamente <strong>10 minutos</strong>, que é o que os coeficientes de Briggs entregam. Só os AEGL de 10 minutos são diretamente comparáveis a ele. O STEL é definido em 15 minutos, o TLV-TWA em 8 horas e o nível de risco mínimo agudo tem base de horas: comparar a média de 10 minutos do modelo a limites de janela mais longa <strong>superestima</strong> o alcance de cada um deles, porque a média longa de uma pluma que meandreia é menor que a de 10 minutos. Convertida a 8 h pela lei de potência, a isopleta de TLV-TWA do cenário médio, hoje em 0,5 km, deixaria de se formar. As distâncias de STEL, TLV e MRL são, portanto, cotas superiores — o que é a direção conservadora para a afirmação de risco, e é assim que devem ser lidas.</p>
+</div>
+</div>
+</div>
+<table class="caption-top table">
+<caption>O MRL agudo é o limiar de saúde mais restritivo do conjunto e vale para a população geral; o AEGL-1 coincide numericamente com o STEL. Valores do membro central do envelope.</caption>
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cenário</th>
+<th style="text-align: right;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math></th>
+<th>MRL agudo 5 ppm</th>
+<th>TLV-TWA 10 ppm</th>
+<th>STEL / AEGL-1 20 ppm</th>
+<th>AEGL-2 230 ppm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>S1 conservador</td>
+<td style="text-align: right;">0,1 kg/s</td>
+<td>não atingido</td>
+<td>não atingido</td>
+<td>não atingido</td>
+<td>não atingido</td>
+</tr>
+<tr class="even">
+<td>S2 médio</td>
+<td style="text-align: right;">1 kg/s</td>
+<td>1,0 km</td>
+<td>0,5 km</td>
+<td>não atingido</td>
+<td>não atingido</td>
+</tr>
+<tr class="odd">
+<td>S3 severo</td>
+<td style="text-align: right;">10 kg/s</td>
+<td>10,2 km</td>
+<td>4,2 km</td>
+<td>2,1 km</td>
+<td>não atingido</td>
+</tr>
+</tbody>
+</table>
+<p>O AEGL-2 não é atingido a nenhuma distância no membro central nem no de menor alcance, em nenhum dos três cenários. Há uma exceção, e ela precisa ser dita: na <strong>borda de maior alcance</strong> do envelope — vento de 1,0 m/s, altura efetiva de 26 m e camada de mistura de 100 m —, o cenário severo de 10 kg/s ultrapassa os 230 ppm do AEGL-2 até cerca de <strong>0,5 km</strong> da fonte. É a única combinação, entre as 63 varridas, em que uma diretriz de efeito grave é cruzada, e ela reúne o cenário de emissão mais alto com o membro de dispersão mais desfavorável — sendo que o próprio cenário de 10 kg/s é cota superior instantânea, não taxa sustentada. O AEGL-3, de 1900 ppm, não é atingido em combinação alguma.</p>
+<p>“Não atingido” significa que a concentração ao nível do solo não alcança o limite em nenhuma distância: com a pluma saindo a 38 m, o máximo no solo permanece abaixo do valor de referência. O efeito da fonte elevada é qualitativo, e não apenas quantitativo — no cenário médio a isopleta de STEL deixa de existir, e as isopletas não são discos colados ao muro da fábrica, e sim anéis, com o solo abaixo do limite nas primeiras centenas de metros.</p>
+<p>As distâncias do cenário S3 são limites de pico, não alcances sustentados: manter 10 kg/s ao longo das 60 horas do episódio exigiria emitir cerca de 2160 t de estireno e dissipar 3,9 MW em calor de vaporização, o que a <a href="../artigo/06b-afericao-externa.html">aferição externa</a> mostra ser incompatível com a escala do evento.</p>
+<p>O contraste central se apoia num argumento independente das isopletas, e a base de comparação precisa ser declarada porque a folga depende dela. Na <strong>média de 10 minutos</strong> em que os limiares de saúde são definidos, a concentração a 15 km no membro central vale 0,025 ppm: <strong>200 vezes</strong> abaixo do nível de risco mínimo agudo (5 ppm) e <strong>800 vezes</strong> abaixo da diretriz de exposição aguda (20 ppm). O pico instantâneo a que o olfato responde, de 0,10 ppm, fica 50 e 200 vezes abaixo dos mesmos valores. A comparação legítima é a primeira — grandezas médias contra limites médios —, e é ela que sustenta a folga de mais de duas ordens de grandeza.</p>
+<p>O maior dos termos discutidos aqui vale um fator ~5, e mesmo o eixo de maior alavancagem do envelope inteiro não fecha uma distância de duas ordens de grandeza. Os níveis de referência ficam confinados a poucos quilômetros no cenário central; o odor varre dezenas.</p>
+<p>A distância da fonte (Unidade IV da Videolar-Innova) ao Teatro Amazonas é de <strong>7,6 km</strong> (planar UTM). Os relatos de até 15 km são consistentes com esse alcance, desde que “15 km” seja tratado como o raio máximo de percepção, e não como a distância a um ponto único.</p>
+</section>
+<section id="mapas-interativos" class="level2">
+<h2 class="anchored" data-anchor-id="mapas-interativos">Mapas interativos</h2>
+<section id="contexto-e-anéis-de-distância" class="level3">
+<h3 class="anchored" data-anchor-id="contexto-e-anéis-de-distância">Contexto e anéis de distância</h3>
+<p>Fonte, referências urbanas e anéis de 5, 10, 15 e 20 km.</p>
+<iframe src="../outputs/maps/mapa_contexto.html" width="100%" height="500" style="border:1px solid #ddd;border-radius:6px;"></iframe>
+</section>
+<section id="rumo-do-transporte" class="level3">
+<h3 class="anchored" data-anchor-id="rumo-do-transporte">Rumo do transporte</h3>
+<p>Setores coloridos por dia e dimensionados pela frequência do vento, indicando o rumo para onde a pluma foi levada — com predominância para oeste, na direção da cidade.</p>
+<iframe src="../outputs/maps/mapa_vento.html" width="100%" height="500" style="border:1px solid #ddd;border-radius:6px;"></iframe>
+</section>
+<section id="isopletas-de-concentração" class="level3">
+<h3 class="anchored" data-anchor-id="isopletas-de-concentração">Isopletas de concentração</h3>
+<p>O mapa abre no cenário defendido neste capítulo (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Q = 0{,}1</annotation></semantics></math> kg/s), com a faixa de incerteza do odor e o rumo alternativo do WRF. A legenda declara as hipóteses adotadas — altura efetiva, vento, camada de mistura, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>, limiar e razão pico/média. Os contornos tracejados correspondem a regiões abertas, em que o corte é da grade e não da pluma; o anel pontilhado de 10 km marca a distância a partir da qual as curvas de Briggs passam a ser extrapoladas.</p>
+<iframe src="../outputs/maps/mapa_isopletas.html" width="100%" height="550" style="border:1px solid #ddd;border-radius:6px;"></iframe>
+</section>
+</section>
+<section id="limitações-do-campo-de-concentração" class="level2">
+<h2 class="anchored" data-anchor-id="limitações-do-campo-de-concentração">Limitações do campo de concentração</h2>
+<p>O rumo é a maior incerteza, e é maior que a incerteza da física. As isopletas são desenhadas no rumo de 80°, mediana do METAR, que projeta a pluma sobre o Centro. O WRF de 1 km deste mesmo projeto dá 134° na madrugada, na célula da fonte, o que projeta a pluma sobre a zona norte: 54° de diferença. Como <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>y</mi></msub><annotation encoding="application/x-tex">\sigma_y</annotation></semantics></math> a 15 km vale apenas 624 m, e os dois rumos separam os eixos por 13,6 km naquela distância, a separação equivale a cerca de 22 larguras de pluma. A terceira camada do mapa apresenta o rumo alternativo; a região efetivamente afetada está em algum ponto entre os dois, e os dados disponíveis não permitem decidir qual.</p>
+<p>As curvas de dispersão extrapolam. O ajuste de Briggs cobre de 100 m a 10 km, enquanto o problema inverso opera a 15 km e o mapa se estende a 40 km. A longa distância <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>y</mi></msub><annotation encoding="application/x-tex">\sigma_y</annotation></semantics></math> e <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>σ</mi><mi>z</mi></msub><annotation encoding="application/x-tex">\sigma_z</annotation></semantics></math> crescem aproximadamente como <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mi>x</mi></msqrt><annotation encoding="application/x-tex">\sqrt{x}</annotation></semantics></math>, de modo que <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>∼</mo><mn>1</mn><mi>/</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">C \sim 1/x</annotation></semantics></math> e a curva pode simplesmente nunca cruzar o limiar. É a razão pela qual algumas linhas registram “não fecha no domínio” em vez de um número: um alcance de dezenas de quilômetros ali seria propriedade da cauda algébrica do ajuste, não física do evento.</p>
+<p>O campo próximo não está resolvido — e não estar resolvido não equivale a estar superestimado. Três efeitos de magnitude comparável agem em sentidos opostos nos primeiros 2 km: a altura efetiva, que reduz a concentração ao nível do solo; o <em>downwash</em> do tanque de 18 m e dos prédios do polo, que a aumenta; e a resolução da grade. Resolver o campo próximo exigiria um modelo de obstáculos, não uma pluma gaussiana.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/elivaldorocha\.github\.io\/pluma-estireno-manaus\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Elivaldo Rocha — Manaus, 2026.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Dados meteorológicos observados (METAR/ASOS), reanálise ERA5 e modelos abertos.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
